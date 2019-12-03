@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Rsyzw">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.Rsyzw.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="送给最好的她"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+<!--        <meta-data-->
+<!--            android:name="com.baidu.speech.APP_ID"-->
+<!--            android:value="17841385" />-->
+<!--        <meta-data-->
+<!--            android:name="com.baidu.speech.API_KEY"-->
+<!--            android:value="WGrcLCY9OPOUPLjSmp2qdvTD" />-->
+<!--        <meta-data-->
+<!--            android:name="com.baidu.speech.SECRET_KEY"-->
+<!--            android:value="BgLNoytDwqKtG5N9jlyMM1K0dlf6Z9WV" />-->
+
+
+        <activity android:name="com.example.Rsyzw.activitys.RankActivity" />
+
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+        <service
+            android:name="com.example.Rsyzw.services.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.Rsyzw.activitys.PlayMusicActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.AlbumListActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.ChangePasswordActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.MeActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.RegisterActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.LoginActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.MainActivity" />
+        <activity android:name="com.example.Rsyzw.activitys.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            <intent-filter>
+                <data android:scheme="aone" android:host="welcomeactivity" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>

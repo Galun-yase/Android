@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/mainColor">
+
+    <ImageView
+        android:id="@+id/bg_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img1"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <!--android:background="@drawable/rotation_background"-->
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:padding="@dimen/rotationImageMarginSize"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/img1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/rotationImageMarginSize">
+
+        <TextView
+            android:id="@+id/al_title"
+            android:paddingTop="@dimen/rotationImageMarginSize"
+            android:paddingLeft="@dimen/roundBitMapBorder"
+            android:paddingRight="@dimen/rotationImageMarginSize"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="歌单标题"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="@dimen/roundBitMapBorder"
+            android:paddingRight="@dimen/rotationImageMarginSize"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/infoSize"
+            android:text="歌单简介"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</FrameLayout>

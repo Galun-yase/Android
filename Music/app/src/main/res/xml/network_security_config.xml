@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">res.lgdsunday.club</domain>
+        <domain includeSubdomains="true">p1.music.126.net</domain>
+        <domain includeSubdomains="true">p2.music.126.net</domain>
+        <domain includeSubdomains="true">p3.music.126.net</domain>
+    </domain-config>
+</network-security-config>
+<!--
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://ip.h5.ra01.sycdn.kuwo.cn/a20b767a1c83ea9f067992a1e38a042c/5dd3a6be/resource/n2/128/79/72/3758896318.mp3</domain>
+    </domain-config>
+</network-security-config>-->

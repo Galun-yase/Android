@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">送给最好的她</string>
+    <string name="register">立 即 注 册</string>
+    <string name="login">登  录</string>
+    <string name="face">游客人脸登录</string>
+    <string name="title_activity_rank">RankActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

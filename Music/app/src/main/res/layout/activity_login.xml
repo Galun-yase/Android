@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.LoginActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"/>
+
+    <com.example.Rsyzw.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="手机号"
+        app:is_password="false" />
+
+    <View
+        style="@style/line"/>
+
+    <com.example.Rsyzw.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="密码"
+        app:is_password="true">
+    </com.example.Rsyzw.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <Button
+        style="@style/commitBtn"
+        android:text="@string/register"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onRegisterClick"/>
+
+    <Button
+    style="@style/commitBtn"
+    android:text="@string/login"
+    android:layout_marginTop="@dimen/marginSize"
+    android:onClick="onCommitClick"/>
+
+    <Button
+        style="@style/commitBtn"
+        android:text="@string/face"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="faceDetect"/>
+
+
+    <com.example.Rsyzw.views.InputView
+        android:id="@+id/input_face"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize2"
+        app:input_icon="@mipmap/face"
+        app:input_hint="游客请输入人脸URL"
+        app:is_password="false"
+        />
+
+
+
+</LinearLayout>

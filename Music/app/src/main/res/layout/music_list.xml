@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_margin="@dimen/marginSize">
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="22dp"
+        android:background="@color/mainColor"/>
+
+    <TextView
+        android:id="@+id/ml_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌单"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/marginTabSize"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        android:layout_margin="@dimen/albumMarginSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/collectionButtonPadding"
+            android:paddingBottom="@dimen/collectionButtonPadding"
+            android:paddingLeft="@dimen/collectionButtonPadding"
+            android:paddingRight="@dimen/collectionButtonPadding"
+            android:text=" + 收藏 10.00万 "
+            android:textSize="@dimen/collectionButtonSize"
+            android:textColor="@android:color/white"
+            android:background="@drawable/collection_button"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/albumMarginSize"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</FrameLayout>

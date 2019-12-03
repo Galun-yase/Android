@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/mainColor" />
+    <corners
+        android:topLeftRadius="@dimen/rotationImageMarginSize"
+        android:topRightRadius="@dimen/rotationImageMarginSize"
+        android:bottomRightRadius="@dimen/rotationImageMarginSize"
+        android:bottomLeftRadius="@dimen/rotationImageMarginSize"/>
+    <stroke android:width="0dp" android:color="#000000" />
+</shape>
